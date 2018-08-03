@@ -31,6 +31,7 @@
     </th>
 
     <th>
+      Director
     </th>
   </tr>
 
@@ -54,6 +55,10 @@
 
     <td>
       <%= movie.description %>
+    </td>
+    
+    <td>
+      <%= Director.find(movie.director_id).name %>
     </td>
 
     <td>
